@@ -1,0 +1,126 @@
+:root {
+    --fonteDestaque: 'Bilbo Swash Caps', cursive;
+    --fontePadrao: 'Forum', cursive;
+    --cor-background: #E6E8E6;
+    --cor-destaque: #542344;
+    --cor-destaqueHover: #A14382;
+    --cor-textoPadrao: #241D22;
+    --cor-textoDestaque: #fff;
+}
+
+/* GERAL */
+    body {
+        font-family: var(--fontePadrao);
+        background-color: var(--cor-background);
+    }
+/* GERAL */
+
+/* HEADER */
+    header {}
+    .hero {
+        width: 100%;
+        height: 100vh;
+        background-image: url(/assets/img/rbcosta_fundo_header.png);
+        background-size: cover;
+        
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero__top {
+        text-align: center;
+        width: 90%;
+    }
+    .top__title {
+        font-family: var(--fonteDestaque);
+        font-size: 60px;
+        margin-bottom: 0;
+    }
+    .top__subTitle {
+        text-transform: uppercase;
+        font-size: 35px;
+        margin-top: 0;
+        
+    }
+    .top__description {
+        margin: 15px auto;
+    }
+    .top__menu {}
+    .menu__list {}
+    .menu__list li {
+        margin: 0;
+    }
+    .menu__list li button {
+        width: 90%;
+        height: 40px;
+        max-width: 90%;
+        background-color: var(--cor-destaque);
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: var(--cor-textoDestaque);
+        font-family: var(--fontePadrao);
+        font-size: 32px;
+    }
+    .menu__list .whats--rose {
+        font-size: 33px;
+    }
+    .menu__list .whats--reinaldo {
+        font-size: 26px;
+    }
+    .menu__list li button:hover {}
+    .menu__icons {
+        text-align: center;
+    }
+    .menu__icons img {
+        width: 40px;
+        margin: 10px 15px;
+    }
+    .menu__icons img .icons__face {}
+    .menu__icons .icons__email {
+        height: 40px;
+        width: 48px;
+    }
+    .menu__icons img .icons__tiktok {}
+    .top__player {
+        
+    }
+    .player__logo {
+        margin-top: 20px;
+        width: 150px;
+    }
+/* HEADER */
+
+/* FOOTER */
+    footer {
+        width: 100%;
+        background-color: #000;
+        
+        text-align: center;
+    }
+    .rodape {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .rodape__player {
+        
+    }
+    .player__logoFooter {
+        width: 150px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+/* FOOTER */
+
+/* MAIN */
+
+/* MAIN */
+
+/* MEDIA */
+
+/* MEDIA */
