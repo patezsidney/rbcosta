@@ -122,5 +122,11 @@
 /* MAIN */
 
 /* MEDIA */
+@media screen (min-width: 600px) {
 
+} 
+
+@media screen (min-width: 800px) {
+    
+}
 /* MEDIA */
