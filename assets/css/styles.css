@@ -118,7 +118,28 @@
 /* FOOTER */
 
 /* MAIN */
-
+    main {}
+    main section {}
+    .section__jeunesse {}
+    .jeunesse__logoCountainer {}
+    .logoCountainer__figure {}
+    .logoCountainer__figure img {}
+    .logoCountainer__figure figcaption {}
+    .logoCountainer__figure figcaption {}
+    .jeunesse__card1 {}
+    .card1__image {}
+    .card1__image img {}
+    .card1__description {}
+    .card1__description p {}
+    .card1__description p strong {}
+    .jeunesse__callToAction {}
+    .jeunesse__callToAction button {}
+    .jeunesse__card2 {}
+    .card2__description {}
+    .card2__description p {}
+    .card2__description p strong {}
+    .card2__image {}
+    .card2__image img {}
 /* MAIN */
 
 /* MEDIA */
