@@ -92,6 +92,15 @@ button {
         font-size: 20px;
         padding-right: 10px;
     }
+    h3 {
+        font-family: var(--fonteDestaque);
+        font-size: 75px;
+    }
+    h4 {
+        font-size: 20px;
+        color: var(--cor-destaque);
+        margin-bottom: 5px;
+    }
 /* GERAL */
 
 /* HEADER */
@@ -320,11 +329,27 @@ button {
 
     /* CONTATO */
         .limpeza__contato {}
+        .limpeza__contato a {
+            display: block;
+            background-color: var(--cor-textoDestaque);
+            color: var(--cor-textoPadrao);
+            margin: 10px 0;
+            padding: 0;
+        }
         .contato__title {}
         .contato__title h3 {}
-        .contacontato__card {}
-        .contatoCard__jeunesse {}
+        .contato__card {
+            flex-direction: column;
+        }
+        .contatos {
+            width: 100%;
+            padding-left: 20px;
+        }
+        .contatoCard__jeunesse {
+            
+        }
         .contatoCard__jeunesse h4 {}
+        .contatoCard__jeunesse a {}
         .jeunesse__email {}
         .jeunesse__whats {}
         .jeunesse__site {}
@@ -334,13 +359,28 @@ button {
         .representacoes__email2 {}
         .representacoes__whats1 {}
         .representacoes__whats2 {}
-        .contatoCard__redesSociais {}
+        .contatoCard__redesSociais {
+            margin-bottom: 20px;
+        }
+        .contatoCard__redesSociais a {
+            display: inline;
+        }
         .contatoCard__redesSociais h4 {}
         .redesSociais__insta {}
-        .redesSociais__face {}
+        .redesSociais__insta::after {
+            content: ' | ';
+        }
+        .redesSociais__face {
+            
+        }
         .contato__images {}
-        .img__rose {}
-        .img__reinaldo {}
+        .img__rose {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .img__reinaldo {
+            width: 100%;
+        }
     /* CONTATO */
 /* MAIN */
 
@@ -399,7 +439,20 @@ button {
     /* LIMPEZA */
 
     /* CONTATO */
-
+        .contato__images {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .contato__images div {
+            width: 50%;
+            text-align: center;
+        }
+        .img__rose {
+            width: 100%;
+        }
+        .img__reinaldo {
+            width: 100%;
+        }
     /* CONTATO */
 }
 @media screen (min-width: 600px) {
