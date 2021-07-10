@@ -8,6 +8,31 @@
     --cor-textoDestaque: #fff;
 }
 
+/* RESET */
+html, body, section, article, nav, div, span, strong, h1, h2, h3, p, ul, li, i {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    border: none;
+    vertical-align: baseline;
+    list-style: none;
+}
+img {
+    width: 300px;
+}
+button {
+    border: none;
+}
+a {
+    text-decoration: none;
+    color: var(--cor-textoPadrao);
+}
+figcaption {
+    display: none;
+}
+/* RESET */
 /* GERAL */
     body {
         font-family: var(--fontePadrao);
@@ -37,11 +62,13 @@
     }
     .top__title {
         font-family: var(--fonteDestaque);
+        color: var(--cor-destaque);
         font-size: 60px;
         margin-bottom: 0;
     }
     .top__subTitle {
         text-transform: uppercase;
+        color: var(--cor-destaque);
         font-size: 35px;
         margin-top: 0;
         
@@ -119,27 +146,96 @@
 
 /* MAIN */
     main {}
-    main section {}
-    .section__jeunesse {}
+    main section {
+        width: 100%;
+        background-image: url(/assets/img/rbcosta_fundo.png);
+        background-size: cover;
+        padding: 20px 0;
+    }
+    .section__jeunesse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .jeunesse__logoCountainer {}
-    .logoCountainer__figure {}
-    .logoCountainer__figure img {}
-    .logoCountainer__figure figcaption {}
-    .logoCountainer__figure figcaption {}
-    .jeunesse__card1 {}
-    .card1__image {}
-    .card1__image img {}
-    .card1__description {}
-    .card1__description p {}
-    .card1__description p strong {}
-    .jeunesse__callToAction {}
-    .jeunesse__callToAction button {}
-    .jeunesse__card2 {}
-    .card2__description {}
-    .card2__description p {}
-    .card2__description p strong {}
-    .card2__image {}
-    .card2__image img {}
+    .logoContainer__figure {
+        margin: 0;
+    }
+    .logoContainer__figure img {
+        width: 250px;
+    }
+    .logoContainer__figure figcaption {}
+    .logoContainer__figure figcaption {}
+    .jeunesse__card1 {
+        width: 90%;
+        background-color: var(--cor-textoDestaque);
+        display: flex;
+        align-items: center;
+    }
+    .card1__image {
+        min-width: 60%;
+        display: inline-flex;
+    }
+    .card1__image img {
+        width: 100%;
+        height: 100%;
+    }
+    .card1__description {
+        padding-left: 10px;
+    }
+    .card1__description p {
+        font-size: 24px;
+    }
+    .card1__description p strong {
+        font-family: var(--fonteDestaque);
+        color: var(--cor-destaque);
+        display: block;
+        font-size: 35px;
+    }
+    .jeunesse__callToAction {
+        padding: 30px 0;
+        width: 90%;
+        text-align: center;
+    }
+    .jeunesse__callToAction button {
+        width: 80%;
+        height: 40px;
+        max-width: 90%;
+        background-color: var(--cor-destaque);
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: var(--cor-textoDestaque);
+        font-family: var(--fontePadrao);
+        font-size: 32px;
+    }
+    .jeunesse__card2 {
+        width: 90%;
+        background-color: var(--cor-textoDestaque);
+        display: flex;
+        align-items: center;
+    }
+    .card2__description {
+        padding-left: 10px;
+    }
+    .card2__description p {
+        font-size: 21px;
+    }
+    .card2__description p strong {
+        font-family: var(--fonteDestaque);
+        color: var(--cor-destaque);
+        display: block;
+        font-size: 35px;
+    }
+    .card2__image {
+        min-width: 60%;
+        display: inline-flex;
+    }
+    .card2__image img {
+        width: 100%;
+        height: 100%;
+    }
 /* MAIN */
 
 /* MEDIA */
