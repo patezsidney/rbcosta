@@ -25,18 +25,72 @@ img {
 button {
     border: none;
 }
-a {
-    text-decoration: none;
-    color: var(--cor-textoPadrao);
-}
-figcaption {
-    display: none;
-}
+
 /* RESET */
 /* GERAL */
     body {
         font-family: var(--fontePadrao);
         background-color: var(--cor-background);
+    }
+    a {
+        text-decoration: none;
+        color: var(--cor-textoPadrao);
+        padding: 5px 10px;
+        max-width: 90%;
+        background-color: var(--cor-destaque);
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: var(--cor-textoDestaque);
+        font-family: var(--fontePadrao);
+        font-size: 16px;
+    }
+    figcaption {
+        display: none;
+    }
+    section {
+        width: 100%;
+        background-size: cover;
+        padding: 20px 0;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logoCountainer {
+
+    }
+    .logoContainer__figure img {
+        width: 250px;
+        margin: 15px 0;
+    }
+    .card {
+        width: 90%;
+        background-color: var(--cor-textoDestaque);
+        display: flex;
+        align-items: center;
+    }
+    .card__img {
+        min-width: 60%;
+        max-width: 60%;
+        display: inline-flex;
+    }
+    .card__img img {
+        width: 100%;
+        height: 100%;
+    }
+    strong {
+        font-family: var(--fonteDestaque);
+        color: var(--cor-destaque);
+        display: block;
+        font-size: 35px;
+    }
+    p {
+        padding-left: 10px;
+        font-size: 20px;
+        padding-right: 10px;
     }
 /* GERAL */
 
@@ -133,9 +187,6 @@ figcaption {
         width: 200px;
         margin: 0 auto;
     }
-    .rodape__player {
-        
-    }
     .player__logoFooter {
         width: 150px;
         margin: 0 auto;
@@ -145,100 +196,191 @@ figcaption {
 /* FOOTER */
 
 /* MAIN */
+
     main {}
-    main section {
-        width: 100%;
-        background-image: url(/assets/img/rbcosta_fundo.png);
-        background-size: cover;
-        padding: 20px 0;
-    }
-    .section__jeunesse {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .jeunesse__logoCountainer {}
-    .logoContainer__figure {
-        margin: 0;
-    }
-    .logoContainer__figure img {
-        width: 250px;
-    }
-    .logoContainer__figure figcaption {}
-    .logoContainer__figure figcaption {}
-    .jeunesse__card1 {
-        width: 90%;
-        background-color: var(--cor-textoDestaque);
-        display: flex;
-        align-items: center;
-    }
-    .card1__image {
-        min-width: 60%;
-        display: inline-flex;
-    }
-    .card1__image img {
-        width: 100%;
-        height: 100%;
-    }
-    .card1__description {
-        padding-left: 10px;
-    }
-    .card1__description p {
-        font-size: 24px;
-    }
-    .card1__description p strong {
-        font-family: var(--fonteDestaque);
-        color: var(--cor-destaque);
-        display: block;
-        font-size: 35px;
-    }
-    .jeunesse__callToAction {
-        padding: 30px 0;
-        width: 90%;
-        text-align: center;
-    }
-    .jeunesse__callToAction button {
-        width: 80%;
-        height: 40px;
-        max-width: 90%;
-        background-color: var(--cor-destaque);
-        border: none;
-        border-radius: 5px;
-        margin: 10px 0;
-        color: var(--cor-textoDestaque);
-        font-family: var(--fontePadrao);
-        font-size: 32px;
-    }
-    .jeunesse__card2 {
-        width: 90%;
-        background-color: var(--cor-textoDestaque);
-        display: flex;
-        align-items: center;
-    }
-    .card2__description {
-        padding-left: 10px;
-    }
-    .card2__description p {
-        font-size: 21px;
-    }
-    .card2__description p strong {
-        font-family: var(--fonteDestaque);
-        color: var(--cor-destaque);
-        display: block;
-        font-size: 35px;
-    }
-    .card2__image {
-        min-width: 60%;
-        display: inline-flex;
-    }
-    .card2__image img {
-        width: 100%;
-        height: 100%;
-    }
+
+    /* JEUNESSE */
+        .jeunesse {
+            background-image: url(/assets/img/rbcosta_fundo.png);
+        }
+        .section__jeunesse {}
+        .jeunesse__logoCountainer {}
+        .logoContainer__figure {
+            margin: 0;
+        }
+        .logoContainer__figure img {}
+        .logoContainer__figure figcaption {}
+        .logoContainer__figure figcaption {}
+        .jeunesse__card1 {
+            width: 90%;
+            background-color: var(--cor-textoDestaque);
+            display: flex;
+            align-items: center;
+        }
+        .card1__image {}
+        .card1__image img {}
+        .card1__description {}
+        .card1__description p {
+            font-size: 22px;
+        }
+        .card1__description p strong {}
+        .jeunesse__callToAction {
+            padding: 30px 0;
+            width: 90%;
+            text-align: center;
+        }
+        .jeunesse__callToAction a {
+            font-size: 32px;
+        }
+        .jeunesse__card2 {
+            width: 90%;
+            background-color: var(--cor-textoDestaque);
+            display: flex;
+            align-items: center;
+        }
+        .card2__description {
+            
+        }
+        .card2__description p {
+            font-size: 19px;
+        }
+        .card2__description p strong {
+            font-size: 33px;
+        }
+        .card2__image {
+            min-width: 60%;
+            display: inline-flex;
+        }
+        .card2__image img {
+            width: 100%;
+            height: 100%;
+        }
+    /* JEUNESSE */
+
+    /* PLASTICOS */
+        .sessao__descartaveis {
+            background-image: url(/assets/img/rbcosta_fundo_header.png);
+        }
+        .descartaveis__idm {}
+        .idm__logoCountainer figure {}
+        .idm__logoCountainer .idm__logo {
+            width: 200px;
+        }
+        .idm__card {}
+        .idm__cardImage {}
+        .idm__cardImage img {}
+        .idm__cardDescription {}
+        .idm__cardDescription p {
+            font-size: 18px;
+        }
+        .idm__cardDescription p strong {
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        .idm__cardDescription a {
+            
+        }
+        .descartaveis__copomais {}
+        .copomais__logoCountainer {}
+        .copomais__logoCountainer figure {}
+        .copomais__logoCountainer figure img {}
+        .copomais__card {}
+        .copomais__cardDescription {}
+        .copomais__cardDescription p {
+            font-size: 19px;
+        }
+        .copomais__cardDescription p strong {
+            margin-top: -5px;
+        }
+        .copomais__cardDescription a {}
+        .copomais__cardImage {}
+        .copomais__cardImage img {}
+    /* PLASTICOS */
+
+    /* LIMPEZA */
+        .sessao__limpeza {
+            background-image: url(/assets/img/rbcosta_fundo.png);
+        }
+        .limpeza__proax {}
+        .proax__logoCountainer {}
+        .proax__logoCountainer figure {}
+        .proax__logoCountainer .idm__logo {}
+        .proax__card {}
+        .proax__cardImage {}
+        .proax__cardImage img {}
+        .proax__cardDescription {}
+        .proax__cardDescription p {
+            font-size: 100%;
+        }
+        .proax__cardDescription p strong {}
+        .proax__cardDescription a {
+            font-size: 15px;
+        }
+    /* LIMPEZA */
+
+    /* CONTATO */
+        
+    /* CONTATO */
 /* MAIN */
 
 /* MEDIA */
+@media (min-width: 400px) {
+    strong {
+        margin-top: -10px;
+    }
+    /* JEUNESSE */
+        .card1__description p {
+            font-size: 30px;
+        }
+        .card1__description p strong {
+            font-size: 50px;
+        }
+        .card2__description p {
+            font-size: 25px;
+        }
+        .card2__description p strong {
+            font-size: 50px;
+        }
+    /* JEUNESSE */
+
+    /* PLASTICOS */
+        .idm__cardDescription p {
+            font-size: 24px;
+        }
+        .idm__cardDescription p strong {
+            font-size: 31px;
+            padding-bottom: 3px;
+        }
+        .idm__cardDescription a {
+            font-size: 22px;
+        }
+        .copomais__cardDescription p {
+            font-size: 22px;
+        }
+        .copomais__cardDescription p strong {
+            font-size: 40px;
+        }
+        .copomais__cardDescription a {
+            font-size: 23px;
+        }
+    /* PLASTICOS */
+
+    /* LIMPEZA */
+        .proax__cardDescription p {
+            font-size: 23px;
+        }
+        .proax__cardDescription p strong {
+            font-size: 40px;
+        }
+        .proax__cardDescription a {
+            font-size: 22px;
+        }
+    /* LIMPEZA */
+    
+    /* CONTATO */
+
+    /* CONTATO */
+}
 @media screen (min-width: 600px) {
 
 } 
