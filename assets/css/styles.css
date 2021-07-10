@@ -319,7 +319,28 @@ button {
     /* LIMPEZA */
 
     /* CONTATO */
-        
+        .limpeza__contato {}
+        .contato__title {}
+        .contato__title h3 {}
+        .contacontato__card {}
+        .contatoCard__jeunesse {}
+        .contatoCard__jeunesse h4 {}
+        .jeunesse__email {}
+        .jeunesse__whats {}
+        .jeunesse__site {}
+        .contatoCard__representacoes {}
+        .contatoCard__representacoes h4 {}
+        .representacoes__email1 {}
+        .representacoes__email2 {}
+        .representacoes__whats1 {}
+        .representacoes__whats2 {}
+        .contatoCard__redesSociais {}
+        .contatoCard__redesSociais h4 {}
+        .redesSociais__insta {}
+        .redesSociais__face {}
+        .contato__images {}
+        .img__rose {}
+        .img__reinaldo {}
     /* CONTATO */
 /* MAIN */
 
@@ -376,7 +397,7 @@ button {
             font-size: 22px;
         }
     /* LIMPEZA */
-    
+
     /* CONTATO */
 
     /* CONTATO */
