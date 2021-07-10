@@ -8,23 +8,126 @@
     --cor-textoDestaque: #fff;
 }
 
+/* RESET */
+html, body, section, article, nav, div, span, strong, h1, h2, h3, p, ul, li, i {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    border: none;
+    vertical-align: baseline;
+    list-style: none;
+}
+img {
+    width: 300px;
+}
+
+
+/* RESET */
 /* GERAL */
     body {
         font-family: var(--fontePadrao);
         background-color: var(--cor-background);
     }
+    a {
+        text-decoration: none;
+        color: var(--cor-textoPadrao);
+        padding: 5px 10px;
+        max-width: 90%;
+        background-color: var(--cor-destaque);
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: var(--cor-textoDestaque);
+        font-family: var(--fontePadrao);
+        font-size: 16px;
+    }
+    figcaption {
+        display: none;
+    }
+    section {
+        width: 100%;
+        background-size: cover;
+        padding: 20px 0;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logoCountainer {
+
+    }
+    .logoContainer__figure img {
+        width: 250px;
+        margin: 15px 0;
+    }
+    .card {
+        width: 90%;
+        background-color: var(--cor-textoDestaque);
+        display: flex;
+        align-items: center;
+    }
+    .card__img {
+        min-width: 60%;
+        max-width: 60%;
+        display: inline-flex;
+    }
+    .card__img img {
+        width: 100%;
+        height: 100%;
+    }
+    strong {
+        font-family: var(--fonteDestaque);
+        color: var(--cor-destaque);
+        display: block;
+        font-size: 35px;
+    }
+    p {
+        padding-left: 10px;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    h1 {
+        text-shadow: 0px 4.93827px 4.93827px rgba(0, 0, 0, 0.25);
+    }
+    h2 {
+        text-shadow: 0px 2.92073px 2.92073px rgba(0, 0, 0, 0.25);
+    }
+    h3 {
+        font-family: var(--fonteDestaque);
+        font-size: 75px;
+        color: var(--cor-destaque);
+        text-shadow: 0px 4.93827px 4.93827px rgba(0, 0, 0, 0.25);
+    }
+    h4 {
+        font-size: 20px;
+        color: var(--cor-destaque);
+        margin-bottom: 5px;
+    }
+    button {
+        border: none;
+        box-shadow: inset 3px 4px 3px 2px rgba(0, 0, 0, 0.19);
+        width: 90%;
+        height: 40px;
+        max-width: 90%;
+        background-color: var(--cor-destaque);
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: var(--cor-textoDestaque);
+        font-family: var(--fontePadrao);
+    }
 /* GERAL */
 
 /* HEADER */
-    header {}
     .hero {
         width: 100%;
         height: 100vh;
         background-image: url(/assets/img/rbcosta_fundo_header.png);
         background-size: cover;
-        
-    }
-    .hero {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -37,11 +140,13 @@
     }
     .top__title {
         font-family: var(--fonteDestaque);
+        color: var(--cor-destaque);
         font-size: 60px;
         margin-bottom: 0;
     }
     .top__subTitle {
         text-transform: uppercase;
+        color: var(--cor-destaque);
         font-size: 35px;
         margin-top: 0;
         
@@ -55,15 +160,6 @@
         margin: 0;
     }
     .menu__list li button {
-        width: 90%;
-        height: 40px;
-        max-width: 90%;
-        background-color: var(--cor-destaque);
-        border: none;
-        border-radius: 5px;
-        margin: 10px 0;
-        color: var(--cor-textoDestaque);
-        font-family: var(--fontePadrao);
         font-size: 32px;
     }
     .menu__list .whats--rose {
@@ -106,9 +202,6 @@
         width: 200px;
         margin: 0 auto;
     }
-    .rodape__player {
-        
-    }
     .player__logoFooter {
         width: 150px;
         margin: 0 auto;
@@ -119,14 +212,595 @@
 
 /* MAIN */
 
+    main {}
+
+    /* JEUNESSE */
+        .jeunesse {
+            background-image: url(/assets/img/rbcosta_fundo.png);
+        }
+        .section__jeunesse {}
+        .jeunesse__logoCountainer {}
+        .logoContainer__figure {
+            margin: 0;
+        }
+        .logoContainer__figure img {}
+        .logoContainer__figure figcaption {}
+        .logoContainer__figure figcaption {}
+        .jeunesse__card1 {
+            width: 90%;
+            background-color: var(--cor-textoDestaque);
+            display: flex;
+            align-items: center;
+        }
+        .card1__image {}
+        .card1__image img {}
+        .card1__description {}
+        .card1__description p {
+            font-size: 22px;
+        }
+        .card1__description p strong {}
+        .jeunesse__callToAction {
+            padding: 30px 0;
+            width: 90%;
+            text-align: center;
+        }
+        .jeunesse__callToAction a {
+            font-size: 32px;
+        }
+        .jeunesse__card2 {
+            width: 90%;
+            background-color: var(--cor-textoDestaque);
+            display: flex;
+            align-items: center;
+        }
+        .card2__description {
+            
+        }
+        .card2__description p {
+            font-size: 19px;
+        }
+        .card2__description p strong {
+            font-size: 33px;
+        }
+        .card2__image {
+            min-width: 60%;
+            display: inline-flex;
+        }
+        .card2__image img {
+            width: 100%;
+            height: 100%;
+        }
+    /* JEUNESSE */
+
+    /* PLASTICOS */
+        .sessao__descartaveis {
+            background-image: url(/assets/img/rbcosta_fundo_header.png);
+        }
+        .descartaveis__idm {}
+        .idm__logoCountainer figure {}
+        .idm__logoCountainer .idm__logo {
+            width: 200px;
+        }
+        .idm__card {}
+        .idm__cardImage {}
+        .idm__cardImage img {}
+        .idm__cardDescription {}
+        .idm__cardDescription p {
+            font-size: 18px;
+        }
+        .idm__cardDescription p strong {
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+        .idm__cardDescription a {
+            
+        }
+        .descartaveis__copomais {}
+        .copomais__logoCountainer {}
+        .copomais__logoCountainer figure {}
+        .copomais__logoCountainer figure img {}
+        .copomais__card {}
+        .copomais__cardDescription {}
+        .copomais__cardDescription p {
+            font-size: 19px;
+        }
+        .copomais__cardDescription p strong {
+            margin-top: -5px;
+        }
+        .copomais__cardDescription a {}
+        .copomais__cardImage {}
+        .copomais__cardImage img {}
+    /* PLASTICOS */
+
+    /* LIMPEZA */
+        .sessao__limpeza {
+            background-image: url(/assets/img/rbcosta_fundo.png);
+        }
+        .limpeza__proax {}
+        .proax__logoCountainer {}
+        .proax__logoCountainer figure {}
+        .proax__logoCountainer .idm__logo {}
+        .proax__card {}
+        .proax__cardImage {}
+        .proax__cardImage img {}
+        .proax__cardDescription {}
+        .proax__cardDescription p {
+            font-size: 100%;
+        }
+        .proax__cardDescription p strong {}
+        .proax__cardDescription a {
+            font-size: 15px;
+        }
+    /* LIMPEZA */
+
+    /* CONTATO */
+        .limpeza__contato {}
+        .limpeza__contato a {
+            display: block;
+            background-color: var(--cor-textoDestaque);
+            color: var(--cor-textoPadrao);
+            margin: 10px 0;
+            padding: 0;
+        }
+        .contato__title {}
+        .contato__title h3 {}
+        .contato__card {
+            flex-direction: column;
+        }
+        .contatos {
+            width: 100%;
+            padding-left: 20px;
+        }
+        .contatoCard__jeunesse {
+            
+        }
+        .contatoCard__jeunesse h4 {}
+        .contatoCard__jeunesse a {}
+        .jeunesse__email {}
+        .jeunesse__whats {}
+        .jeunesse__site {}
+        .contatoCard__representacoes {}
+        .contatoCard__representacoes h4 {}
+        .representacoes__email1 {}
+        .representacoes__email2 {}
+        .representacoes__whats1 {}
+        .representacoes__whats2 {}
+        .contatoCard__redesSociais {
+            margin-bottom: 20px;
+        }
+        .contatoCard__redesSociais a {
+            display: inline;
+        }
+        .contatoCard__redesSociais h4 {}
+        .redesSociais__insta {}
+        .redesSociais__insta::after {
+            content: ' | ';
+        }
+        .redesSociais__face {
+            
+        }
+        .contato__images {}
+        .img__rose {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .img__reinaldo {
+            width: 100%;
+        }
+    /* CONTATO */
 /* MAIN */
 
 /* MEDIA */
-@media screen (min-width: 600px) {
+@media (min-width: 400px) {
+    strong {
+        margin-top: -10px;
+    }
+    /* JEUNESSE */
+        .card1__description p {
+            font-size: 30px;
+        }
+        .card1__description p strong {
+            font-size: 50px;
+        }
+        .card2__description p {
+            font-size: 25px;
+        }
+        .card2__description p strong {
+            font-size: 50px;
+        }
+    /* JEUNESSE */
 
+    /* PLASTICOS */
+        .idm__cardDescription p {
+            font-size: 24px;
+        }
+        .idm__cardDescription p strong {
+            font-size: 31px;
+            padding-bottom: 3px;
+        }
+        .idm__cardDescription a {
+            font-size: 22px;
+        }
+        .copomais__cardDescription p {
+            font-size: 22px;
+        }
+        .copomais__cardDescription p strong {
+            font-size: 40px;
+        }
+        .copomais__cardDescription a {
+            font-size: 23px;
+        }
+    /* PLASTICOS */
+
+    /* LIMPEZA */
+        .proax__cardDescription p {
+            font-size: 23px;
+        }
+        .proax__cardDescription p strong {
+            font-size: 40px;
+        }
+        .proax__cardDescription a {
+            font-size: 22px;
+        }
+    /* LIMPEZA */
+
+    /* CONTATO */
+        .contato__images {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .contato__images div {
+            width: 50%;
+            text-align: center;
+        }
+        .img__rose {
+            width: 100%;
+        }
+        .img__reinaldo {
+            width: 100%;
+        }
+    /* CONTATO */
+}
+@media (min-width: 600px) {
+    /* HEADER */
+        .hero__top {
+            padding: 0;
+        }
+        .top__title {
+            font-size: 80px;
+            
+        }
+        .top__subTitle {
+            font-size: 50px;
+           
+        }
+        .top__description {
+            font-size: 25px;
+        }
+    /* HEADER */
+    strong {
+        margin-top: 0;
+    }
+    p {
+        padding: 0 20px;
+    }
+    .logoContainer__figure img {
+        width: 350px;
+    }
+
+
+    /* JEUNESSE */
+        .card1__description p {
+            font-size: 40px;
+        }
+        .card1__description p strong {
+            font-size: 80px;
+        }
+        .card2__description p {
+            font-size: 35px;
+        }
+        .card2__description p strong {
+            font-size: 70px;
+        }
+    /* JEUNESSE */
+
+    /* PLASTICOS */
+        .idm__cardDescription p {
+            font-size: 34px;
+        }
+        .idm__cardDescription p strong {
+            font-size: 41px;
+            padding-bottom: 3px;
+        }
+        .idm__cardDescription a {
+            font-size: 32px;
+        }
+        .copomais__cardDescription p {
+            font-size: 32px;
+        }
+        .copomais__cardDescription p strong {
+            font-size: 50px;
+        }
+        .copomais__cardDescription a {
+            font-size: 33px;
+        }
+    /* PLASTICOS */
+
+    /* LIMPEZA */
+        .proax__cardDescription p {
+            font-size: 33px;
+        }
+        .proax__cardDescription p strong {
+            font-size: 50px;
+        }
+        .proax__cardDescription a {
+            font-size: 32px;
+        }
+    /* LIMPEZA */
+
+    /* CONTATO */
+        .limpeza__contato {
+            align-items: stretch;
+            max-width: 90%;
+            margin: 0 auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .contato__title {
+            margin: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        .contato__title h3 {
+            font-size: 85px;
+        }
+        .contato__card {
+            width: 60%;
+        }
+        .contato__images {
+            width: 40%;
+            flex-direction: column;
+        }
+        .contato__images div {
+            width: 100%;
+            text-align: center;
+        }
+        .contato__images div p {
+            display: none;
+        }
+        .img__rose {
+            width: 100%;
+            margin-bottom: 0;
+        }
+        .img__reinaldo {
+            width: 100%;
+        }
+    /* CONTATO */
 } 
 
-@media screen (min-width: 800px) {
+@media (min-width: 800px) {
+    /* GERAL */
+        body {
+            background-image: url(/assets/img/fundo_desktop.png);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        main {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 35px;
+        }
+        strong {
+            font-size: 20px;
+        }
+        a:hover {
+            cursor: pointer;
+            background-color: var(--cor-destaqueHover);
+            color: white;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: var(--cor-destaqueHover);
+        }
+
+        
+    /* GERAL */
+    /* HEADER */
+        .hero {
+            background-image: unset;
+            flex-direction: row;
+        }
+        .hero__top {
+            max-width: 512px;
+        }
+        .menu__list li button {
+            font-size: 58px;
+            border-radius: 13px;
+            height: auto;
+        }
+        .menu__list .whats--rose {
+            font-size: 58px;
+            border-radius: 13px;
+            height: auto;
+        }
+        .menu__list .whats--reinaldo {
+            font-size: 47px;
+            border-radius: 13px;
+            height: auto;
+        }
+        .menu__icons img {
+            width: 60px;
+            margin: 10px 15px;
+        }
+        .menu__icons:hover {
+            cursor: pointer;
+        }
+        .menu__icons .icons__email {
+            height: 60px;
+            width: 74px;
+        }
+        .player__logo {
+            margin-top: 30px;
+            width: 250px;
+        }
+        .player__logo:hover {
+            cursor: pointer;
+        }
     
+    /* HEADER */
+    
+    /* MAIN */
+        /* JEUNESSE */
+        .jeunesse {
+            background-image: unset;
+            
+        }
+        .section__jeunesse {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .jeunesse__logoCountainer {
+            width: 100%;
+            text-align: center;
+        }
+        .logoContainer__figure {
+            
+        }
+        .logoContainer__figure img {
+            width: 550px;
+        }
+        .jeunesse__card1 {
+            width: 42%;
+        }
+        .card1__description p {
+            font-size: 31px;
+        }
+        .card1__description p strong {
+            font-size: 65px;
+        }
+        .jeunesse__callToAction {
+            width: 15%;
+        }
+        .jeunesse__callToAction a {
+            font-size: 26px;
+        }
+        .jeunesse__card2 {
+            width: 42%;
+        }
+        .card2__description p {
+            font-size: 27px;
+        }
+        .card2__description p strong {
+            font-size: 53px;
+        }
+        
+        /* JEUNESSE */
+        /* PLASTICOS */
+        .sessao__descartaveis {
+            background-image: unset;
+            display: flex;
+            align-items: flex-end;
+        }
+        .idm__logoCountainer .idm__logo {
+            width: 340px;
+            margin-bottom: 40px;
+        }
+        .idm__cardDescription p {
+            font-size: 26px;
+        }
+        .idm__cardDescription p strong {
+            font-size: 34px;
+        }
+        .idm__cardDescription a {
+            font-size: 24px;
+        }
+        .descartaveis__copomais {
+            max-width: 50%;
+        }
+        .copomais__cardDescription a {
+            font-size: 24px;
+        }
+    /* PLASTICOS */
+
+    /* * LIMPEZA */
+        .sessao__limpeza {
+            background-image: unset;
+            display: flex;
+        }
+        .limpeza__proax {}
+        .proax__logoCountainer {}
+        .proax__logoCountainer figure {}
+        .proax__logoCountainer .idm__logo {
+            width: 250px;
+        }
+        .proax__card {}
+        .proax__cardImage {}
+        .proax__cardImage img {}
+        .proax__cardDescription {}
+        .proax__cardDescription p {
+            font-size: 100%;
+        }
+        .proax__cardDescription p strong {}
+        .proax__cardDescription a {
+            font-size: 15px;
+        }
+    /* LIMPEZA */
+
+    /* CONTATO */
+        .limpeza__contato {
+            max-width: 50%;
+        }
+        .limpeza__contato a {
+        }
+        .contato__title {}
+        .contato__title h3 {}
+        .contato__card {
+            
+        }
+        .contatos {
+        
+        }
+        .contatoCard__jeunesse {
+            
+        }
+        .contatoCard__jeunesse h4 {}
+        .contatoCard__jeunesse a {}
+        .jeunesse__email {}
+        .jeunesse__whats {}
+        .jeunesse__site {}
+        .contatoCard__representacoes {}
+        .contatoCard__representacoes h4 {}
+        .representacoes__email1 {}
+        .representacoes__email2 {}
+        .representacoes__whats1 {}
+        .representacoes__whats2 {}
+        .contatoCard__redesSociais {
+           
+        }
+        .contatoCard__redesSociais a {
+            
+        }
+        .contatoCard__redesSociais h4 {}
+        .redesSociais__insta {}
+        .redesSociais__insta::after {
+          
+        }
+        .redesSociais__face {
+            
+        }
+        .contato__images {}
+        .img__rose {
+         
+        }
+        .img__reinaldo {
+            
+        }
+    /* CONTATO */
+    /* MAIN */
+
+
 }
 /* MEDIA */
