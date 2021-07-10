@@ -110,19 +110,24 @@ img {
     button {
         border: none;
         box-shadow: inset 3px 4px 3px 2px rgba(0, 0, 0, 0.19);
+        width: 90%;
+        height: 40px;
+        max-width: 90%;
+        background-color: var(--cor-destaque);
+        border: none;
+        border-radius: 5px;
+        margin: 10px 0;
+        color: var(--cor-textoDestaque);
+        font-family: var(--fontePadrao);
     }
 /* GERAL */
 
 /* HEADER */
-    header {}
     .hero {
         width: 100%;
         height: 100vh;
         background-image: url(/assets/img/rbcosta_fundo_header.png);
         background-size: cover;
-        
-    }
-    .hero {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -155,15 +160,6 @@ img {
         margin: 0;
     }
     .menu__list li button {
-        width: 90%;
-        height: 40px;
-        max-width: 90%;
-        background-color: var(--cor-destaque);
-        border: none;
-        border-radius: 5px;
-        margin: 10px 0;
-        color: var(--cor-textoDestaque);
-        font-family: var(--fontePadrao);
         font-size: 32px;
     }
     .menu__list .whats--rose {
@@ -583,7 +579,228 @@ img {
     /* CONTATO */
 } 
 
-@media screen (min-width: 800px) {
+@media (min-width: 800px) {
+    /* GERAL */
+        body {
+            background-image: url(/assets/img/fundo_desktop.png);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        main {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        p {
+            font-size: 35px;
+        }
+        strong {
+            font-size: 20px;
+        }
+        a:hover {
+            cursor: pointer;
+            background-color: var(--cor-destaqueHover);
+            color: white;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: var(--cor-destaqueHover);
+        }
+
+        
+    /* GERAL */
+    /* HEADER */
+        .hero {
+            background-image: unset;
+            flex-direction: row;
+        }
+        .hero__top {
+            max-width: 512px;
+        }
+        .menu__list li button {
+            font-size: 58px;
+            border-radius: 13px;
+            height: auto;
+        }
+        .menu__list .whats--rose {
+            font-size: 58px;
+            border-radius: 13px;
+            height: auto;
+        }
+        .menu__list .whats--reinaldo {
+            font-size: 47px;
+            border-radius: 13px;
+            height: auto;
+        }
+        .menu__icons img {
+            width: 60px;
+            margin: 10px 15px;
+        }
+        .menu__icons:hover {
+            cursor: pointer;
+        }
+        .menu__icons .icons__email {
+            height: 60px;
+            width: 74px;
+        }
+        .player__logo {
+            margin-top: 30px;
+            width: 250px;
+        }
+        .player__logo:hover {
+            cursor: pointer;
+        }
     
+    /* HEADER */
+    
+    /* MAIN */
+        /* JEUNESSE */
+        .jeunesse {
+            background-image: unset;
+            
+        }
+        .section__jeunesse {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .jeunesse__logoCountainer {
+            width: 100%;
+            text-align: center;
+        }
+        .logoContainer__figure {
+            
+        }
+        .logoContainer__figure img {
+            width: 550px;
+        }
+        .jeunesse__card1 {
+            width: 42%;
+        }
+        .card1__description p {
+            font-size: 31px;
+        }
+        .card1__description p strong {
+            font-size: 65px;
+        }
+        .jeunesse__callToAction {
+            width: 15%;
+        }
+        .jeunesse__callToAction a {
+            font-size: 26px;
+        }
+        .jeunesse__card2 {
+            width: 42%;
+        }
+        .card2__description p {
+            font-size: 27px;
+        }
+        .card2__description p strong {
+            font-size: 53px;
+        }
+        
+        /* JEUNESSE */
+        /* PLASTICOS */
+        .sessao__descartaveis {
+            background-image: unset;
+            display: flex;
+            align-items: flex-end;
+        }
+        .idm__logoCountainer .idm__logo {
+            width: 340px;
+            margin-bottom: 40px;
+        }
+        .idm__cardDescription p {
+            font-size: 26px;
+        }
+        .idm__cardDescription p strong {
+            font-size: 34px;
+        }
+        .idm__cardDescription a {
+            font-size: 24px;
+        }
+        .descartaveis__copomais {
+            max-width: 50%;
+        }
+        .copomais__cardDescription a {
+            font-size: 24px;
+        }
+    /* PLASTICOS */
+
+    /* * LIMPEZA */
+        .sessao__limpeza {
+            background-image: unset;
+            display: flex;
+        }
+        .limpeza__proax {}
+        .proax__logoCountainer {}
+        .proax__logoCountainer figure {}
+        .proax__logoCountainer .idm__logo {
+            width: 250px;
+        }
+        .proax__card {}
+        .proax__cardImage {}
+        .proax__cardImage img {}
+        .proax__cardDescription {}
+        .proax__cardDescription p {
+            font-size: 100%;
+        }
+        .proax__cardDescription p strong {}
+        .proax__cardDescription a {
+            font-size: 15px;
+        }
+    /* LIMPEZA */
+
+    /* CONTATO */
+        .limpeza__contato {
+            max-width: 50%;
+        }
+        .limpeza__contato a {
+        }
+        .contato__title {}
+        .contato__title h3 {}
+        .contato__card {
+            
+        }
+        .contatos {
+        
+        }
+        .contatoCard__jeunesse {
+            
+        }
+        .contatoCard__jeunesse h4 {}
+        .contatoCard__jeunesse a {}
+        .jeunesse__email {}
+        .jeunesse__whats {}
+        .jeunesse__site {}
+        .contatoCard__representacoes {}
+        .contatoCard__representacoes h4 {}
+        .representacoes__email1 {}
+        .representacoes__email2 {}
+        .representacoes__whats1 {}
+        .representacoes__whats2 {}
+        .contatoCard__redesSociais {
+           
+        }
+        .contatoCard__redesSociais a {
+            
+        }
+        .contatoCard__redesSociais h4 {}
+        .redesSociais__insta {}
+        .redesSociais__insta::after {
+          
+        }
+        .redesSociais__face {
+            
+        }
+        .contato__images {}
+        .img__rose {
+         
+        }
+        .img__reinaldo {
+            
+        }
+    /* CONTATO */
+    /* MAIN */
+
+
 }
 /* MEDIA */
