@@ -298,6 +298,7 @@ img {
         }
         .contatoCard__redesSociais {
             margin-bottom: 20px;
+            padding-left: 0;
         }
         .contatoCard__redesSociais a {
             display: inline;
@@ -481,22 +482,25 @@ img {
             font-size: 85px;
         }
         .contato__card {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .contatoCard__rose {
             width: 60%;
         }
-        .contato__images {
+        .contatoCard__imgRose {
             width: 40%;
-            flex-direction: column;
-        }
-        .contato__images div {
-            width: 100%;
-            text-align: center;
-        }
-        .contato__images div p {
-            display: none;
         }
         .img__rose {
             width: 100%;
             margin-bottom: 0;
+        }
+        .contatoCard__reinaldo {
+            width: 60%;
+        }
+        .contatoCard__imgReinaldo {
+            width: 40%;
         }
         .img__reinaldo {
             width: 100%;
