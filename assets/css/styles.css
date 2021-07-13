@@ -123,7 +123,7 @@ img {
     .hero {
         width: 100%;
         height: 100vh;
-        background-image: url(https://pages.player2marketing.com.br/rbcosta/assets/img/rbcosta_fundo_header.png);
+        background-image: url(https://www.player2marketing.com.br/ppages/rbcosta/assets/img/rbcosta_fundo_header.png);
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -154,6 +154,16 @@ img {
     .menu__list li {
         margin: 0;
     }
+    .menu__list li a {
+        color: none;
+        padding: 0;
+        max-width: 100%;
+        background-color: none;
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        color: none;
+    }
     .menu__list li button {
         font-size: 32px;
     }
@@ -166,6 +176,12 @@ img {
     .menu__icons {
         text-align: center;
     }
+    .menu__icons a {
+        background: none;
+    }
+    .menu__icons a:hover {
+        background: none;
+    }
     .menu__icons img {
         width: 40px;
         margin: 10px 15px;
@@ -173,6 +189,12 @@ img {
     .menu__icons .icons__email {
         height: 40px;
         width: 48px;
+    }
+    .top__player a {
+        background: none;
+    }
+    .top__player a:hover {
+        background: none;
     }
     .player__logo {
         margin-top: 20px;
@@ -191,6 +213,12 @@ img {
         width: 200px;
         margin: 0 auto;
     }
+    .rodape a {
+        background: none;
+    }
+    .rodape a:hover {
+        background: none;
+    }
     .player__logoFooter {
         width: 150px;
         margin: 0 auto;
@@ -203,7 +231,7 @@ img {
 
     /* JEUNESSE */
         .jeunesse {
-            background-image: url(https://pages.player2marketing.com.br/rbcosta/assets/img/rbcosta_fundo.png);
+            background-image: url(https://www.player2marketing.com.br/ppages/rbcosta/assets/img/rbcosta_fundo.png);
         }
         .logoContainer__figure {
             margin: 0;
@@ -249,7 +277,7 @@ img {
 
     /* PLASTICOS */
         .sessao__descartaveis {
-            background-image: url(https://pages.player2marketing.com.br/rbcosta/assets/img/rbcosta_fundo_header.png);
+            background-image: url(https://www.player2marketing.com.br/ppages/rbcosta/assets/img/rbcosta_fundo_header.png);
         }
         .idm__logoCountainer .idm__logo {
             width: 200px;
@@ -271,7 +299,7 @@ img {
 
     /* LIMPEZA */
         .sessao__limpeza {
-            background-image: url(https://pages.player2marketing.com.br/rbcosta/assets/img/rbcosta_fundo.png);
+            background-image: url(https://www.player2marketing.com.br/ppages/rbcosta/assets/img/rbcosta_fundo.png);
         }
         .proax__cardDescription p {
             font-size: 100%;
@@ -298,7 +326,6 @@ img {
         }
         .contatoCard__redesSociais {
             margin-bottom: 20px;
-            padding-left: 0;
         }
         .contatoCard__redesSociais a {
             display: inline;
@@ -486,21 +513,25 @@ img {
             flex-direction: row;
             flex-wrap: wrap;
         }
+        .contatoCard__redesSociais {
+            padding-left: 0;
+        }
         .contatoCard__rose {
             width: 60%;
         }
         .contatoCard__imgRose {
             width: 40%;
         }
-        .img__rose {
-            width: 100%;
-            margin-bottom: 0;
-        }
         .contatoCard__reinaldo {
             width: 60%;
         }
         .contatoCard__imgReinaldo {
             width: 40%;
+        }
+        
+        .img__rose {
+            width: 100%;
+            margin-bottom: 0;
         }
         .img__reinaldo {
             width: 100%;
@@ -511,7 +542,7 @@ img {
 @media (min-width: 800px) {
     /* GERAL */
         body {
-            background-image: url(https://pages.player2marketing.com.br/rbcosta/assets/img/fundo_desktop.png);
+            background-image: url(https://www.player2marketing.com.br/ppages/rbcosta/assets/img/fundo_desktop.png);
             background-attachment: fixed;
             background-size: cover;
         }
