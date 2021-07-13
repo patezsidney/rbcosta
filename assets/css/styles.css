@@ -134,6 +134,7 @@ img {
     .hero__top {
         text-align: center;
         width: 90%;
+        padding: 0;
     }
     .top__title {
         font-family: var(--fonteDestaque);
@@ -197,7 +198,7 @@ img {
         background: none;
     }
     .player__logo {
-        margin-top: 20px;
+        margin-top: 0;
         width: 150px;
     }
 /* HEADER */
@@ -326,6 +327,7 @@ img {
         }
         .contatoCard__redesSociais {
             margin-bottom: 20px;
+            padding-left: 0;
         }
         .contatoCard__redesSociais a {
             display: inline;
